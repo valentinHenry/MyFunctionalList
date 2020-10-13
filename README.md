@@ -1,7 +1,7 @@
 My Functional List
 =================
 
-# About
+## About
 This exercise is an exercise which I am giving to students at the end of the
 "piscine" period at EPITA. It will be used during a live coding for the group
 6.
@@ -10,14 +10,14 @@ This exercise's goal is to show recursive ways to solve problems. Another goal
 is to teach them basic functional functions like map, flatmap, reduce, filter
 or flatten.
 
-# Given Files
+## Given Files
 - A Makefile with the rules below:
 	- all: compiles "list.c" into a .o;
 	- check: launch the criterion test-suite;
 - A header containing the struct and all functions to implement with their descriptios;
 - A "test.c" file containing a test-suite written using criterion.
 
-# How to do this exercise?
+## How to do this exercise?
 All of the functions in this exercise must be coded using recursion (even though
 some of them may not be terminal).
 
