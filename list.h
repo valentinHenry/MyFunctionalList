@@ -20,7 +20,7 @@ void list_foreach(const struct list *l, void (*fn)(const void *));
 void list_free(struct list *l);
 
 /**
- ** Add an element to the list.
+ ** Add an element to the head of the list.
 **/
 struct list *list_add(struct list *l, void *e);
 
