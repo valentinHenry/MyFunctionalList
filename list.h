@@ -44,14 +44,15 @@ struct list *list_map(const struct list *l, void *(map_fn)(const void *));
 struct list *list_copy(const struct list *l, struct list **tail);
 
 /**
- ** Flatten a list of list (change the depth of a list from n to n - 1).
+ ** Flatten a list of list (change the depth of a list from n to n - 1) and
+ ** then returns the new list.
 **/
 struct list *list_flatten(const struct list *l);
 
 /**
  ** Applies the function <map_fn> on all elements of the list, then flatten
  ** it. The temporary list must be freed using the <free_internal_mapped_list_fn>
- ** function.
+ ** function. The function returns the new list.
 **/
 struct list *list_flatmap(const struct list *l,
                           void *(*map_fn)(const void *),

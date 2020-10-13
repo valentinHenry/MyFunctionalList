@@ -72,7 +72,8 @@ struct list *list_map(const struct list *l, void *(map_fn)(const void *));
 struct list *list_copy(const struct list *l, struct list **tail);
 
 /**
- ** Flatten a list of list (change the depth of a list from n to n - 1).
+ ** Flatten a list of list (change the depth of a list from n to n - 1) and then
+ ** returns the new list.
 **/
 struct list *list_flatten(const struct list *l);
 
